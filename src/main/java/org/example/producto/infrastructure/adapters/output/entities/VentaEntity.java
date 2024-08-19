@@ -2,6 +2,8 @@ package org.example.producto.infrastructure.adapters.output.entities;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -37,6 +39,6 @@ public class VentaEntity {
     private int numCuotas;
     @Column ("cuotaspagadas")
     private int cuotasPagadas;
-    @Column ("idusuario")
-    private long idUsuario;
+    @OneToMany(mappedBy = "idusuario")
+    private UsuarioEntity idUsuario;
 }

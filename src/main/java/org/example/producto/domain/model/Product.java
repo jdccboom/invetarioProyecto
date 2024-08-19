@@ -1,14 +1,16 @@
 package org.example.producto.domain.model;
 
+import lombok.Builder;
 import lombok.Data;
 import org.example.producto.domain.model.enums.EstadoProducto;
 import org.example.producto.domain.model.enums.TipoProducto;
 
 @Data
-public class Producto {
+@Builder
+public class Product {
     private long id;
-    private EstadoProducto estado;
-    private String nombre;
+    private EstadoProducto state;
+    private String name;
     private int cantidad;
     private String descripcion;
     private double precioProvedor;
@@ -16,5 +18,6 @@ public class Producto {
     private String imagen;
     private TipoProducto tipo;
     private Proveedor proveedor;
+
 }
 

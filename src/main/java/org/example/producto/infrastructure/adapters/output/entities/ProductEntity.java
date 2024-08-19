@@ -2,7 +2,9 @@ package org.example.producto.infrastructure.adapters.output.entities;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.example.producto.domain.model.enums.EstadoProducto;
@@ -15,7 +17,8 @@ import org.springframework.data.relational.core.mapping.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table("producto")
-public class ProductoEntity {
+@Builder
+public class ProductEntity {
     @Id
     @Column("id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,7 +39,7 @@ public class ProductoEntity {
     private String imagen;
     @Column ("tipo")
     private TipoProducto tipo;
-    @Column ("idproveedor")
-    private long idProveedor;
+    @OneToMany (mappedBy = "idproveedor")
+    private ProveedorEntity idProveedor;
 }
 

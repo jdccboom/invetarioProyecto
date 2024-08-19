@@ -1,5 +1,6 @@
 package org.example.producto.infrastructure.adapters.output.entities;
 
+import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -14,10 +15,10 @@ import org.springframework.data.relational.core.mapping.Table;
 public class DetalleProductoEntity {
     @Column ("cantidad")
     private int cantidad;
-    @Column ("idproducto")
-    private long idProducto;
+    @OneToOne(mappedBy = "idproducto")
+    private ProductEntity idProducto;
     @Column ("preciototal")
     private double precioTotal;
-    @Column ("idventa")
-    private long idVenta;
+    @OneToOne (mappedBy = "idventa")
+    private VentaEntity idVenta;
 }

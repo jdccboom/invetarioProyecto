@@ -2,6 +2,7 @@ package org.example.producto.infrastructure.adapters.output.entities;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -30,7 +31,7 @@ public class FacturaEntity {
     private double cambio;
     @Column ("total")
     private double total;
-    @Column ("idventa")
+    @OneToMany (mappedBy = "idventa")
     private long idVenta;
 
 }

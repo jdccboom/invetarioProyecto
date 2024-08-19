@@ -7,7 +7,7 @@ import org.example.producto.infrastructure.adapters.output.entities.VentaEntity;
 public class DetalleProducto {
     private long id;
     private int cantidad;
-    private Producto producto;
+    private Product product;
     private double precioTotal;
     private VentaEntity ventaEntity;
 }

@@ -4,7 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84edbe9b-bb60-4410-9bc8-76f7fe7ae52a" name="Changes" comment="Se creo las el modelo y los entities" />
+    <list default="true" id="84edbe9b-bb60-4410-9bc8-76f7fe7ae52a" name="Changes" comment="Se creo las el modelo y los entities">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/input/DetalleProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/input/FacturaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/input/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/input/ProveedorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/input/UsuarioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/input/VentaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/output/DetallaProductPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/output/FacturaPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/output/ProductPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/output/ProveedorPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/output/UsuarioPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/output/VentaPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/service/DetalleProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/service/FacturaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/service/ProveedorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/service/UsuarioServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/service/VentaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/dtos/CreateProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/dtos/LoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/dtos/PasswordRecoveryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/dtos/RegisterUsuarioDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/dtos/UpdateProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/portImpl/DetallaProductPortImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/portImpl/FacturaPortImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/portImpl/ProductPortImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/portImpl/ProveedorPortImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/portImpl/UsuarioPortImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/portImpl/VentaPortImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/repositories/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/repositories/UsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/DetalleProducto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/DetalleProducto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Proveedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Proveedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/DetalleProductoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/DetalleProductoEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/FacturaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/FacturaEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/ProductoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/ProductEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/VentaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/VentaEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/producto/ProductoEntityApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/producto/ProductEntityApplicationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,27 +58,27 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Record" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "jdccboom"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jdccboom&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jdccboom/invetarioProyecto.git",
-    "accountId": "4d413250-db7e-4156-b0e7-bde81b08c77b"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jdccboom/invetarioProyecto.git&quot;,
+    &quot;accountId&quot;: &quot;4d413250-db7e-4156-b0e7-bde81b08c77b&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -58,7 +102,9 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.ProductoApplication.executor": "Run",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/david/IdeaProjects/EjemploCleanArquitecture/producto/src/main/java/org/example/producto/infrastructure/adapters/output/entities",
@@ -78,9 +124,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.producto.infrastructure.adapters.output.portImpl" />
+      <recent name="org.example.producto.application.service" />
       <recent name="org.example.producto.domain.dtos" />
+      <recent name="org.example.producto.application.port.input" />
       <recent name="org.example.producto.domain.model.enums" />
-      <recent name="org.example.producto.domain.model.emuns" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\david\IdeaProjects\EjemploCleanArquitecture\producto\src\main\java\org\example\producto\infrastructure\adapters\output\entities" />
@@ -114,6 +162,7 @@
       <workItem from="1724016104594" duration="5199000" />
       <workItem from="1724021480432" duration="2627000" />
       <workItem from="1724086808288" duration="3632000" />
+      <workItem from="1724091011013" duration="7404000" />
     </task>
     <task id="LOCAL-00001" summary="Se creo las el modelo y los entities">
       <option name="closed" value="true" />
@@ -131,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724090727502</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Se creo las el modelo y los entities">
+      <option name="closed" value="true" />
+      <created>1724091180791</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724091180791</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
