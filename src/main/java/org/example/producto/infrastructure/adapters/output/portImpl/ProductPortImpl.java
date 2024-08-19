@@ -4,9 +4,11 @@ import org.example.producto.application.port.output.ProductPort;
 import org.example.producto.domain.model.Product;
 import org.example.producto.infrastructure.adapters.output.entities.ProductEntity;
 import org.example.producto.infrastructure.adapters.output.repositories.ProductRepository;
+import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+@Component
 public class ProductPortImpl implements ProductPort {
 
     private final ProductRepository productRepository;
@@ -44,13 +46,13 @@ public class ProductPortImpl implements ProductPort {
         Product productModel = Product.builder().
                 id(product.getId()).
                 name(product.getNombre()).
-                descripcion(product.getDescripcion()).
+                description(product.getDescripcion()).
                 state(product.getEstado()).
                 imagen(product.getImagen()).
-                cantidad(product.getCantidad()).
+                number(product.getCantidad()).
                 tipo(product.getTipo()).
-                precioProvedor(product.getPrecioProvedor()).
-                precioVenta(product.getPrecioVenta()).build();
+                pricePurveyor(product.getPrecioProvedor()).
+                priceSale(product.getPrecioVenta()).build();
         return productModel;
     }
 
@@ -58,13 +60,13 @@ public class ProductPortImpl implements ProductPort {
         ProductEntity productEntity = ProductEntity.builder().
                 id(product.getId()).
                 nombre(product.getName()).
-                descripcion(product.getDescripcion()).
+                descripcion(product.getDescription()).
                 estado(product.getState()).
                 imagen(product.getImagen()).
-                cantidad(product.getCantidad()).
+                cantidad(product.getNumber()).
                 tipo(product.getTipo()).
-                precioProvedor(product.getPrecioProvedor()).
-                precioVenta(product.getPrecioVenta()).build();
+                precioProvedor(product.getPricePurveyor()).
+                precioVenta(product.getPriceSale()).build();
         return productEntity;
     }
 }

@@ -40,6 +40,6 @@ public class ProductEntity {
     @Column ("tipo")
     private TipoProducto tipo;
     @OneToMany (mappedBy = "idproveedor")
-    private ProveedorEntity idProveedor;
+    private PurveyorEntity idProveedor;
 }
 

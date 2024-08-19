@@ -5,9 +5,11 @@ import org.example.producto.application.port.output.ProductPort;
 import org.example.producto.domain.dtos.CreateProductDTO;
 import org.example.producto.domain.dtos.UpdateProductDTO;
 import org.example.producto.domain.model.Product;
+import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+@Service
 public class ProductServiceImpl implements ProductService {
     private final ProductPort productPort;
 
@@ -20,13 +22,13 @@ public class ProductServiceImpl implements ProductService {
         Product product = Product.builder().
                 id(createProductDTO.id()).
                 name(createProductDTO.nombre()).
-                descripcion(createProductDTO.descripcion()).
+                description(createProductDTO.descripcion()).
                 state(createProductDTO.estado()).
                 imagen(createProductDTO.imagen()).
-                cantidad(createProductDTO.cantidad()).
+                number(createProductDTO.cantidad()).
                 tipo(createProductDTO.tipo()).
-                precioProvedor(createProductDTO.precioProvedor()).
-                precioVenta(createProductDTO.precioVenta()).build();
+                pricePurveyor(createProductDTO.precioProvedor()).
+                priceSale(createProductDTO.precioVenta()).build();
 
         return productPort.addProduct(product);
     }
@@ -38,13 +40,13 @@ public class ProductServiceImpl implements ProductService {
         ).flatMap(
                 product -> {
                     product.setName(updateProductDTO.nombre());
-                    product.setDescripcion(updateProductDTO.descripcion());
+                    product.setDescription(updateProductDTO.descripcion());
                     product.setState(updateProductDTO.estado());
                     product.setImagen(updateProductDTO.imagen());
-                    product.setCantidad(updateProductDTO.cantidad());
+                    product.setNumber(updateProductDTO.cantidad());
                     product.setTipo(updateProductDTO.tipo());
-                    product.setPrecioProvedor(updateProductDTO.precioProvedor());
-                    product.setPrecioVenta(updateProductDTO.precioVenta());
+                    product.setPricePurveyor(updateProductDTO.precioProvedor());
+                    product.setPriceSale(updateProductDTO.precioVenta());
                     return productPort.updateProduct(product);
                 }
         );
@@ -60,5 +62,12 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Flux<Product> getAllProducts() throws Exception {
         return productPort.getAllProducts();
+    }
+
+    @Override
+    public Mono<Product> getProductById(Long id) throws Exception {
+        return productPort.getProductById(id).switchIfEmpty(
+                Mono.error(new Exception("The product is not found"))
+        );
     }
 }

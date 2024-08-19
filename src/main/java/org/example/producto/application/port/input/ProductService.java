@@ -11,4 +11,5 @@ public interface ProductService {
     Mono<Product> updateProduct(UpdateProductDTO updateProductDTO) throws Exception;
     Mono<String> deleteProduct(Long id) throws Exception;
     Flux<Product> getAllProducts() throws Exception;
+    Mono<Product> getProductById(Long id) throws Exception;
 }

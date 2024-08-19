@@ -11,13 +11,13 @@ public class Product {
     private long id;
     private EstadoProducto state;
     private String name;
-    private int cantidad;
-    private String descripcion;
-    private double precioProvedor;
-    private double precioVenta;
+    private int number;
+    private String description;
+    private double pricePurveyor;
+    private double priceSale;
     private String imagen;
     private TipoProducto tipo;
-    private Proveedor proveedor;
+    private Purveyor purveyor;
 
 }
 
