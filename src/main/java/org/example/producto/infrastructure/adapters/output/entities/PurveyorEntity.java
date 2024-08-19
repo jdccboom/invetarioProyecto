@@ -19,7 +19,6 @@ public class PurveyorEntity {
     @Column("id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
     @Column ("estado")
     private EstadoProveedor estado;
     @Column ("nombre")
