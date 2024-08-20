@@ -6,8 +6,8 @@ import org.example.producto.infrastructure.adapters.output.entities.SaleEntity;
 @Data
 public class DetailProduct {
     private long id;
-    private int cantidad;
+    private int number;
     private Product product;
-    private double precioTotal;
-    private SaleEntity saleEntity;
+    private double total;
+    private SaleEntity sale_entity;
 }

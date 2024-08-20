@@ -1,0 +1,205 @@
+GET http://localhost:8080/products/all
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-20T125703.200.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+Content-Length: 202
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 0,
+  "nombre": "Camisa roja",
+  "estado": "DISPONIBLE",
+  "descripcion": "Es roja",
+  "cantidad": 1,
+  "precioProvedor": 500,
+  "precioVenta": 600,
+  "imagen": "imagen.png",
+  "tipo": "ROPA"
+}
+
+<> 2024-08-20T125625.200.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+Content-Length: 202
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 0,
+  "nombre": "Camisa roja",
+  "estado": "DISPONIBLE",
+  "descripcion": "Es roja",
+  "cantidad": 1,
+  "precioProvedor": 500,
+  "precioVenta": 600,
+  "imagen": "imagen.png",
+  "tipo": "ROPA"
+}
+
+<> 2024-08-20T125004.500.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+Content-Length: 202
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 0,
+  "nombre": "Camisa roja",
+  "estado": "DISPONIBLE",
+  "descripcion": "Es roja",
+  "cantidad": 1,
+  "precioProvedor": 500,
+  "precioVenta": 600,
+  "imagen": "imagen.png",
+  "tipo": "ROPA"
+}
+
+<> 2024-08-20T124914.500.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+Content-Length: 170
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 0,
+  "nombre": "",
+  "estado": "DISPONIBLE",
+  "descripcion": "",
+  "cantidad": 0,
+  "precioProvedor": 0,
+  "precioVenta": 0,
+  "imagen": "",
+  "tipo": "ROPA"
+}
+
+<> 2024-08-20T124618.500.json
+
+###
+
+GET http://localhost:8080/products/all
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-20T124610.200.json
+
+###
+
+GET http://localhost:8080/products/all
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-20T124319.200.json
+
+###
+
+GET http://localhost:8080/products/all
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-20T123804.500.json
+
+###
+
+GET http://localhost:8080/products/all
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-20T123736.500.json
+
+###
+
+GET http://localhost:8080/products/all
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-20T123037.500.json
+
+###
+
+GET http://localhost:8080/products/all
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-20T122650.500.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+Content-Length: 170
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": 0,
+  "nombre": "",
+  "estado": "DISPONIBLE",
+  "descripcion": "",
+  "cantidad": 0,
+  "precioProvedor": 0,
+  "precioVenta": 0,
+  "imagen": "",
+  "tipo": "ROPA"
+}
+
+<> 2024-08-20T111104.500.json
+
+###
+
+GET http://localhost:8080/products/all
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-20T110439.500.json
+
+###
+
+GET http://localhost:8080/products/all
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-20T110414.500.json
+
+###
+

@@ -8,7 +8,7 @@ import org.example.producto.domain.model.enums.EstadoProveedor;
 @Builder
 public class Purveyor {
     private long id;
-    private EstadoProveedor estado;
-    private String nombre;
-    private String contacto;
+    private EstadoProveedor state;
+    private String name;
+    private String contact;
 }

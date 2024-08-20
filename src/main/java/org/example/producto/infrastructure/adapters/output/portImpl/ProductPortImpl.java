@@ -42,31 +42,29 @@ public class ProductPortImpl implements ProductPort {
         return productRepository.findById(id).map(this::toProductModel);
     }
 
-    private Product toProductModel(ProductEntity product) {
-        Product productModel = Product.builder().
+    public Product toProductModel(ProductEntity product) {
+        return Product.builder().
                 id(product.getId()).
-                name(product.getNombre()).
-                description(product.getDescripcion()).
-                state(product.getEstado()).
-                imagen(product.getImagen()).
-                number(product.getCantidad()).
-                tipo(product.getTipo()).
-                pricePurveyor(product.getPrecioProvedor()).
-                priceSale(product.getPrecioVenta()).build();
-        return productModel;
+                name(product.getName()).
+                description(product.getDescription()).
+                state(product.getState()).
+                image(product.getImage()).
+                number(product.getNumber()).
+                type(product.getType()).
+                pricePurveyor(product.getPricePurveyor()).
+                priceSale(product.getPriceSale()).build();
     }
 
-    private ProductEntity toProductEntity(Product product) {
-        ProductEntity productEntity = ProductEntity.builder().
+    public ProductEntity toProductEntity(Product product) {
+        return ProductEntity.builder().
                 id(product.getId()).
-                nombre(product.getName()).
-                descripcion(product.getDescription()).
-                estado(product.getState()).
-                imagen(product.getImagen()).
-                cantidad(product.getNumber()).
-                tipo(product.getTipo()).
-                precioProvedor(product.getPricePurveyor()).
-                precioVenta(product.getPriceSale()).build();
-        return productEntity;
+                name(product.getName()).
+                description(product.getDescription()).
+                state(product.getState()).
+                image(product.getImage()).
+                number(product.getNumber()).
+                type(product.getType()).
+                pricePurveyor(product.getPricePurveyor()).
+                priceSale(product.getPriceSale()).build();
     }
 }

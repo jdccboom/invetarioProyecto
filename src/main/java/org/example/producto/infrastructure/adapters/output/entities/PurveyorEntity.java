@@ -1,28 +1,27 @@
 package org.example.producto.infrastructure.adapters.output.entities;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.example.producto.domain.model.enums.EstadoProveedor;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table("proveedor")
+@Entity
+@Builder
 public class PurveyorEntity {
     @Id
-    @Column("id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column ("estado")
-    private EstadoProveedor estado;
-    @Column ("nombre")
-    private String nombre;
-    @Column ("contacto")
-    private String contacto;
+    private EstadoProveedor state;
+    private String name;
+    private String contact;
 }

@@ -7,10 +7,10 @@ import java.time.LocalDate;
 @Data
 public class Receipt {
     private long id;
-    private LocalDate fecha;
-    private String titular;
-    private double efectivo;
-    private double cambio;
+    private LocalDate date;
+    private String chief;
+    private double cash;
+    private double change;
     private double total;
     private Sale sale;
 }

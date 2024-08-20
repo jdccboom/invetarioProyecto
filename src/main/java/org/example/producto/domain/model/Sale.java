@@ -12,12 +12,12 @@ public class Sale {
     private long id;
     private EstadoVenta state;
     private String name;
-    private LocalDate dateCreado;
-    private LocalDate datePagado;
+    private LocalDate dateCreated;
+    private LocalDate datePaid;
     private double total;
-    private TipoPago tipoPago;
-    private int numCuotas;
-    private int cuotasPagadas;
-    private List <DetailProduct> listaProductos;
+    private TipoPago typePayment;
+    private int numberFees;
+    private int feesPaid;
+    private List <DetailProduct> listProducts;
     private User user;
 }

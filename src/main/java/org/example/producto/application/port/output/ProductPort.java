@@ -1,6 +1,7 @@
 package org.example.producto.application.port.output;
 
 import org.example.producto.domain.model.Product;
+import org.example.producto.infrastructure.adapters.output.entities.ProductEntity;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

@@ -1,45 +1,33 @@
 package org.example.producto.infrastructure.adapters.output.entities;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.example.producto.domain.model.enums.EstadoProducto;
 import org.example.producto.domain.model.enums.TipoProducto;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table("producto")
+@Entity
 @Builder
 public class ProductEntity {
     @Id
-    @Column("id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column("estado")
-    private EstadoProducto estado;
-    @Column("nombre")
-    private String nombre;
-    @Column("descrpcion")
-    private String descripcion;
-    @Column("cantidad")
-    private int cantidad;
-    @Column("precioProvedor")
-    private double precioProvedor;
-    @Column("precioVenta")
-    private double precioVenta;
-    @Column("imagen")
-    private String imagen;
-    @Column ("tipo")
-    private TipoProducto tipo;
-    @OneToMany (mappedBy = "idproveedor")
-    private PurveyorEntity idProveedor;
+    private EstadoProducto state;
+    private String name;
+    private String description;
+    private int number;
+    private double pricePurveyor;
+    private double priceSale;
+    private String image;
+    private TipoProducto type;
+    @ManyToOne()
+    private PurveyorEntity idPurveyorEntity;
 }
 

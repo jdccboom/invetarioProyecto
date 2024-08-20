@@ -13,4 +13,5 @@ public class User {
     private String cedula;
     private String phone;
     private String address;
+    private Role role;
 }

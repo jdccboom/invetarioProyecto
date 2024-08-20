@@ -4,45 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84edbe9b-bb60-4410-9bc8-76f7fe7ae52a" name="Changes" comment="Se crearon los servicios y el CRUD de Product">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/input/ProductController.java" afterDir="false" />
+    <list default="true" id="84edbe9b-bb60-4410-9bc8-76f7fe7ae52a" name="Changes" comment="Actualización">
+      <change afterPath="$PROJECT_DIR$/.idea/diff-generator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpb-settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producto.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/exception/ProductNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/RoleEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/producto/application/ProductServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/input/DetalleProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/input/DetailProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/input/FacturaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/input/ReceiptService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/input/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/input/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/input/ProveedorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/input/PurveyorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/input/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/input/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/input/VentaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/input/SaleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/output/DetallaProductPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/output/DetailProductPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/output/FacturaPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/output/ReceiptPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/output/ProveedorPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/output/PurveyorPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/output/UsuarioPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/output/UserPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/output/VentaPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/output/SalePort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/application/service/DetalleProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/service/DetailProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/application/service/FacturaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/service/ReceiptServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/output/ProductPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/port/output/ProductPort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/application/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/service/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/application/service/ProveedorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/service/PurveyorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/application/service/UsuarioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/application/service/VentaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/application/service/SaleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/DetalleProducto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/DetailProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Receipt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/DetailProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/DetailProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Proveedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Purveyor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Venta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Sale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/DetalleProductoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/DetailProductEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/FacturaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/ReceiptEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Purveyor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Purveyor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Receipt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/Sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/domain/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/input/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/input/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/DetailProductEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/DetailProductEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/ProductEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/ProductEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/ProveedorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/PurveyorEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/UsuarioEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/VentaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/SaleEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/portImpl/DetallaProductPortImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/portImpl/DetailProductPortImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/portImpl/FacturaPortImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/portImpl/ReceiptPortImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/PurveyorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/PurveyorEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/ReceiptEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/ReceiptEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/SaleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/SaleEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/entities/UserEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/portImpl/ProductPortImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/portImpl/ProductPortImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/portImpl/ProveedorPortImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/portImpl/PurveyorPortImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/portImpl/UsuarioPortImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/portImpl/UserPortImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/portImpl/VentaPortImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/portImpl/SalePortImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/repositories/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/producto/infrastructure/adapters/output/repositories/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,12 +41,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Record" />
         <option value="Interface" />
+        <option value="Enum" />
+        <option value="com.intellij.jpb.JpaLiquibaseChangeLog" />
+        <option value="com.intellij.jpb.FlywayMigrationScript" />
         <option value="Class" />
       </list>
     </option>
@@ -93,6 +87,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "HTTP Request.All in generated-requests.executor": "Run",
+    "HTTP Request.generated-requests | #1.executor": "Run",
+    "HTTP Request.generated-requests | #2.executor": "Run",
+    "JUnit.ProductServiceTest.testFindById_ProductDoesNotExist.executor": "Run",
+    "JUnit.ProductServiceTest.testFindById_ProductExists.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -118,19 +117,66 @@
     ]
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.producto.domain.model.enums" />
       <recent name="org.example.producto.infrastructure.adapters.output.portImpl" />
       <recent name="org.example.producto.application.service" />
       <recent name="org.example.producto.domain.dtos" />
       <recent name="org.example.producto.application.port.input" />
-      <recent name="org.example.producto.domain.model.enums" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\david\IdeaProjects\EjemploCleanArquitecture\producto\src\main\java\org\example\producto\infrastructure\adapters\output\entities" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.producto.infrastructure.adapters.output.entities" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ProductServiceTest.testFindById_ProductDoesNotExist">
+    <configuration name="All in generated-requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductServiceTest.testFindById_ProductDoesNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="producto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.producto.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.producto.application" />
+      <option name="MAIN_CLASS_NAME" value="org.example.producto.application.ProductServiceTest" />
+      <option name="METHOD_NAME" value="testFindById_ProductDoesNotExist" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceTest.testFindById_ProductExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="producto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.producto.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.producto.application" />
+      <option name="MAIN_CLASS_NAME" value="org.example.producto.application.ProductServiceTest" />
+      <option name="METHOD_NAME" value="testFindById_ProductExists" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="producto" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.producto.ProductoApplication" />
@@ -138,6 +184,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ProductServiceTest.testFindById_ProductDoesNotExist" />
+        <item itemvalue="JUnit.ProductServiceTest.testFindById_ProductExists" />
+        <item itemvalue="HTTP Request.generated-requests | #1" />
+        <item itemvalue="HTTP Request.generated-requests | #2" />
+        <item itemvalue="HTTP Request.All in generated-requests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -158,7 +213,9 @@
       <workItem from="1724016104594" duration="5199000" />
       <workItem from="1724021480432" duration="2627000" />
       <workItem from="1724086808288" duration="3632000" />
-      <workItem from="1724091011013" duration="9483000" />
+      <workItem from="1724091011013" duration="11566000" />
+      <workItem from="1724102746731" duration="1023000" />
+      <workItem from="1724164071753" duration="13836000" />
     </task>
     <task id="LOCAL-00001" summary="Se creo las el modelo y los entities">
       <option name="closed" value="true" />
@@ -192,7 +249,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724098880922</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Se crearon los port y repositories">
+      <option name="closed" value="true" />
+      <created>1724101746328</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724101746328</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Actualización">
+      <option name="closed" value="true" />
+      <created>1724103689845</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724103689845</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +274,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se creo las el modelo y los entities" />
     <MESSAGE value="Se crearon los servicios y el CRUD de Product" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se crearon los servicios y el CRUD de Product" />
+    <MESSAGE value="Se crearon los port y repositories" />
+    <MESSAGE value="Actualización" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualización" />
   </component>
 </project>

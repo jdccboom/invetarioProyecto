@@ -1,0 +1,12 @@
+{
+  "id": 0,
+  "state": "DISPONIBLE",
+  "name": "Camisa roja",
+  "number": 1,
+  "description": "Es roja",
+  "pricePurveyor": 500.0,
+  "priceSale": 600.0,
+  "image": "imagen.png",
+  "type": "ROPA",
+  "purveyor": null
+}

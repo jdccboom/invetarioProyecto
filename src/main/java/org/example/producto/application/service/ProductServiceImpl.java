@@ -4,6 +4,7 @@ import org.example.producto.application.port.input.ProductService;
 import org.example.producto.application.port.output.ProductPort;
 import org.example.producto.domain.dtos.CreateProductDTO;
 import org.example.producto.domain.dtos.UpdateProductDTO;
+import org.example.producto.domain.exception.ProductNotFoundException;
 import org.example.producto.domain.model.Product;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
@@ -24,9 +25,9 @@ public class ProductServiceImpl implements ProductService {
                 name(createProductDTO.nombre()).
                 description(createProductDTO.descripcion()).
                 state(createProductDTO.estado()).
-                imagen(createProductDTO.imagen()).
+                image(createProductDTO.imagen()).
                 number(createProductDTO.cantidad()).
-                tipo(createProductDTO.tipo()).
+                type(createProductDTO.tipo()).
                 pricePurveyor(createProductDTO.precioProvedor()).
                 priceSale(createProductDTO.precioVenta()).build();
 
@@ -36,15 +37,15 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Mono<Product> updateProduct(UpdateProductDTO updateProductDTO) throws Exception {
         return productPort.getProductById(updateProductDTO.id()).switchIfEmpty(
-                Mono.error(new Exception("The product is not found"))
+                Mono.error(new ProductNotFoundException("The product is not found"))
         ).flatMap(
                 product -> {
                     product.setName(updateProductDTO.nombre());
                     product.setDescription(updateProductDTO.descripcion());
                     product.setState(updateProductDTO.estado());
-                    product.setImagen(updateProductDTO.imagen());
+                    product.setImage(updateProductDTO.imagen());
                     product.setNumber(updateProductDTO.cantidad());
-                    product.setTipo(updateProductDTO.tipo());
+                    product.setType(updateProductDTO.tipo());
                     product.setPricePurveyor(updateProductDTO.precioProvedor());
                     product.setPriceSale(updateProductDTO.precioVenta());
                     return productPort.updateProduct(product);
@@ -55,7 +56,7 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Mono<String> deleteProduct(Long id) throws Exception {
         return productPort.getProductById(id).switchIfEmpty(
-                Mono.error(new Exception("The product is not found"))
+                Mono.error(new ProductNotFoundException("The product is not found"))
         ).then(productPort.deleteProduct(id));
     }
 
@@ -67,7 +68,7 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Mono<Product> getProductById(Long id) throws Exception {
         return productPort.getProductById(id).switchIfEmpty(
-                Mono.error(new Exception("The product is not found"))
+                Mono.error(new ProductNotFoundException("The product is not found"))
         );
     }
 }

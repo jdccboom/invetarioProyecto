@@ -15,8 +15,8 @@ public class Product {
     private String description;
     private double pricePurveyor;
     private double priceSale;
-    private String imagen;
-    private TipoProducto tipo;
+    private String image;
+    private TipoProducto type;
     private Purveyor purveyor;
 
 }

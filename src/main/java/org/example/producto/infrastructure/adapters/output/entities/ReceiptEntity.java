@@ -1,12 +1,10 @@
 package org.example.producto.infrastructure.adapters.output.entities;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
@@ -15,23 +13,19 @@ import java.time.LocalDate;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table("factura")
+@Entity
+@Builder
 public class ReceiptEntity {
 
-    @Id @Column("id")
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column ("fecha")
-    private LocalDate fecha;
-    @Column ("titular")
-    private String titular;
-    @Column ("efectivo")
-    private double efectivo;
-    @Column ("cambio")
-    private double cambio;
-    @Column ("total")
+    private LocalDate date;
+    private String chief;
+    private double cash;
+    private double change;
     private double total;
-    @OneToMany (mappedBy = "idventa")
-    private long idVenta;
+    @ManyToOne
+    private SaleEntity idSale;
 
 }

@@ -1,24 +1,25 @@
 package org.example.producto.infrastructure.adapters.output.entities;
 
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 
 import lombok.NoArgsConstructor;
-import org.springframework.data.relational.core.mapping.Column;
-import org.springframework.data.relational.core.mapping.Table;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table("detalleProducto")
+@Entity
+@Builder
 public class DetailProductEntity {
-    @Column ("cantidad")
-    private int cantidad;
-    @OneToOne(mappedBy = "idproducto")
-    private ProductEntity idProducto;
-    @Column ("preciototal")
-    private double precioTotal;
-    @OneToOne (mappedBy = "idventa")
-    private SaleEntity idVenta;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private int number;
+    @ManyToOne
+    private ProductEntity idProduct;
+    private double total;
+    @ManyToOne
+    private SaleEntity saleEntity;
 }
